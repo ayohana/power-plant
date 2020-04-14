@@ -8,13 +8,13 @@
 
 [About](#About) | [Specs](#Specs) | [Installation](#Installation-Instructions) | [Bugs](#Known-Bugs) | [Technologies](#Technologies-Used) | [Contact](#Support-and-Contact-Details)
 
-![GitHub](https://img.shields.io/github/license/ayohana/coin-counter?color=%23DE98B2&style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/coin-counter/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/coin-counter?color=%23DE98B2&style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/ayohana/coin-counter?color=%23DE98B2&style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/ayohana/power-plant?color=%23DE98B2&style=for-the-badge) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/ayohana/power-plant/master?color=%23DE98B2&style=for-the-badge) ![GitHub language count](https://img.shields.io/github/languages/count/ayohana/power-plant?color=%23DE98B2&style=for-the-badge)
 
 </div>
 
 ## About
 
-This JavaScript CLI application is a Test Driven Development exercise and a practice for writing closures and recursive functions.
+This JavaScript CLI and GUI application is a Test Driven Development exercise and a practice for writing closures and recursive functions.
 
 ## Specs
 
@@ -30,7 +30,7 @@ This JavaScript CLI application is a Test Driven Development exercise and a prac
 
 ## Installation Instructions
 
-* Clone this [repository](https://github.com/ayohana/coin-counter.git/)
+* Clone this [repository](https://github.com/ayohana/power-plant.git/)
 * Open the command line and navigate into the repository.
 * Use the command `npm install` to install all necessary plugins.
 * To test all TDD specs, use the command `npm test`.
