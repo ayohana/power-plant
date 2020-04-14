@@ -1,8 +1,8 @@
 {
-  "name": "template",
+  "name": "power-plant",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build; webpack-dev-server --open --mode development",
@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "keywords": [],
-  "author": "Adela Darmansyah",
+  "author": "Adela Darmansyah and Krista Rutz",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",

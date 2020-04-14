@@ -11,14 +11,14 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devtool: 'eval-source-map',
-  devServer: {               
-    contentBase: './dist'    
-        },
+  devServer: {
+    contentBase: './dist'
+  },
   plugins: [
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Title',
+      title: 'Power Plant',
       template: './src/index.html',
       inject: 'body'
     }),
