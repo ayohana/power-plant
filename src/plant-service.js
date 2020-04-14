@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 // This function stores our state.
-const storeState = (initialState) => {
+export const storeState = (initialState) => {
   let currentState = initialState;
   return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
@@ -10,10 +10,10 @@ const storeState = (initialState) => {
   }
 }
 
-const stateChanger = storeState({});
+export const stateChanger = storeState({ soil: 0, water: 0, light: 0});
 
 // This is a function factory. We can easily create more specific functions that alter a plant's soil, water, and light to varying degrees.
-const changeState = (prop) => {
+export const changeState = (prop) => {
   return (value) => {
     return (state) => ({
       ...state,
@@ -24,20 +24,21 @@ const changeState = (prop) => {
 
 // functions created using the function factory
 
-const feed = changeState("soil");
-const hydrate = changeState("water");
-const giveLight = changeState("light");
+export const feed = changeState("soil");
+export const hydrate = changeState("water");
+export const giveLight = changeState("light");
 
-const blueFood = feed(5);
-const greenFood = feed(10);
-const yuckyFood = feed(-5);
+export const blueFood = feed(5);
+export const greenFood = feed(10);
+export const yuckyFood = feed(-5);
 
 // plants that are manipulated using our factory-made functions
-let plant = {};
-plant = blueFood(plant);
-// console.log(plant);
+
+// let plant = {};
+// plant = blueFood(plant);
+// // console.log(plant);
 const fedPlant = stateChanger(blueFood);
-console.log(fedPlant);
+// console.log(fedPlant);
 
 $(document).ready(function() {
 

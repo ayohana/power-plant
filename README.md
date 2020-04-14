@@ -22,9 +22,13 @@ This JavaScript CLI and GUI application is a Test Driven Development exercise an
   <summary>Click to expand!</summary>
 
 | Spec | Input | Output |
-| :-------------     | :------------- | :------------- |
-| **Program returns user input with two decimal places** | 4.99 | 4.99 |
-
+| :--- | :---- | :------ |
+| **Program creates a plant object** | new plant | plant = { soil:0, water:0, light:0 } |
+| **Program allows users to feed a plant** | feed(plant) | plant = { soil:5, water:0, light:0 } |
+| **Program allows users to hydrate a plant** | hydrate(plant) | plant = { soil:0, water:5, light:0 } |
+| **Program allows users to give light to a plant** | giveLight(plant) | plant = { soil:0, water:0, light:5 } |
+| **Program accumulates status points of a plant** | feed(plant), giveLight(plant) | plant = { soil:5, water:0, light:5 } |
+| **Program allows users to create multiple plants** | new plantOne, new plantTwo | `Objects:` plantOne, plantTwo |
 
 </details>
 
