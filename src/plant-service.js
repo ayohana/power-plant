@@ -32,6 +32,13 @@ export const blueFood = feed(5);
 export const greenFood = feed(10);
 export const yuckyFood = feed(-5);
 
+export const water = hydrate(5);
+export const coffee = hydrate(2);
+export const ammonia = hydrate(-10);
+
+export const flashlight = giveLight(1);
+export const uvLight = giveLight(10);
+
 // plants that are manipulated using our factory-made functions
 
 // let plant = {};
